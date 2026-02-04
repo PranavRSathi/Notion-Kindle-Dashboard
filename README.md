@@ -65,13 +65,6 @@ server.
 ### 3️⃣ Get Database ID
 From the database URL: https://www.notion.so/xxxxxxxxDATABASE_IDxxxxxxxx
 
-
----
-
-All good — this is just **formatting cleanup**, nothing else.
-Below is the **same content**, cleaned, structured, and with **proper Markdown headings and lists**.
-You can paste this straight into `README.md`.
-
 ---
 
 ## ⚙️ Installation
