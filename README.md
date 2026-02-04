@@ -41,18 +41,6 @@ server.
 
 ---
 
-## 🧱 Project Structure
-
-notion-kindle-dashboard/
-│
-├── server.js # Node server + HTML generator
-├── package.json
-├── .env.example
-├── .gitignore
-└── new.html # auto-generated (do not edit)
-
----
-
 ## 📦 Requirements
 
 - Node.js **18+**
@@ -253,13 +241,4 @@ If this helped you:
 
 * ⭐ Star the repository
 * 🔗 Share with other Kindle / Notion users
-
----
-
-If you want, next I can:
-
-* sanity-check the **final README end-to-end**
-* strip it down even more
-* or stop entirely here 👍
-
 
