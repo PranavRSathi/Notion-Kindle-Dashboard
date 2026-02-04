@@ -80,142 +80,186 @@ From the database URL: https://www.notion.so/xxxxxxxxDATABASE_IDxxxxxxxx
 
 ---
 
+All good — this is just **formatting cleanup**, nothing else.
+Below is the **same content**, cleaned, structured, and with **proper Markdown headings and lists**.
+You can paste this straight into `README.md`.
+
+---
+
 ## ⚙️ Installation
 
-### 1️⃣ Clone
+### 1️⃣ Clone the repository
 
+```bash
 git clone https://github.com/yourname/notion-kindle-dashboard
 cd notion-kindle-dashboard
+```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install dependencies
+
+```bash
 npm install
+```
 
-3️⃣ Configure Environment
+### 3️⃣ Configure environment
 
-Create .env:
+Create a `.env` file:
 
+```env
 NOTION_TOKEN=ntn_xxxxxxxxxxxxxxxxxxxxx
+```
 
+Edit `server.js`:
 
-Edit server.js:
-
+```js
 const DATABASE_ID = "your_database_id_here";
+```
 
-▶️ Run the Server
+---
+
+## ▶️ Run the Server
+
+```bash
 node server.js
-
+```
 
 You should see:
 
+```
 ✔ HTML regenerated
 ✔ Server running at http://localhost:3000/new.html
+```
 
-🌐 Access the Dashboard
-On your computer
+---
+
+## 🌐 Access the Dashboard
+
+### On your computer
+
+```
 http://localhost:3000/new.html
+```
 
-On Kindle (same Wi-Fi)
+### On Kindle (same Wi-Fi network)
+
+```
 http://YOUR_COMPUTER_IP:3000/new.html
-
+```
 
 Example:
 
+```
 http://192.168.1.15:3000/new.html
+```
 
-📖 Kindle Optimization Tips
+---
 
-Rotate to landscape
+## 📖 Kindle Optimization Tips
 
-Enable Article Mode if available
+* Rotate to **landscape mode**
+* Enable **Article Mode** if available
+* Set screen timeout to **maximum**
+* Ignore the address bar (cannot be hidden on stock Kindle)
 
-Set screen timeout to max
+---
 
-Ignore address bar (cannot be hidden on stock Kindle)
+## 🔄 Auto-Refresh Behavior
 
-🔄 Auto-Refresh Behavior
-Event	Result
-Server starts	HTML generated
-Task checked	Notion updated immediately
-Task added in Notion	Appears within refresh interval
-Page refresh	State stays correct
-Refresh Intervals (default)
+### What happens when…
 
-Server → Notion sync: 2 minutes
+| Event                | Result                          |
+| -------------------- | ------------------------------- |
+| Server starts        | HTML generated                  |
+| Task checked         | Notion updated immediately      |
+| Task added in Notion | Appears within refresh interval |
+| Page refresh         | State stays correct             |
 
-Browser auto reload: 2 minutes
+### Refresh intervals (default)
 
-(Adjustable in server.js)
+* **Server → Notion sync:** 2 minutes
+* **Browser auto-reload:** 2 minutes
 
-🧪 VS Code Live Server (Optional)
+(Adjustable in `server.js`)
 
-If you want to preview layout only:
+---
 
-Install Live Server extension
+## 🧪 VS Code Live Server (Optional)
 
-Run:
+Use this **only to preview layout**.
 
-node server.js
+1. Install **Live Server** extension
+2. Run:
 
+   ```bash
+   node server.js
+   ```
+3. Right-click `new.html` → **Open with Live Server**
 
-Right-click new.html → Open with Live Server
+⚠️ **Note**
 
-⚠️ Note:
+* Live Server is **read-only**
+* Checkbox clicks will **not** sync
+* Use the Node server for full functionality
 
-Live Server = read-only
+---
 
-Checkbox clicks will not sync
+## 🛠 Troubleshooting
 
-Use Node server for full functionality
+### “No tasks found”
 
-🛠 Troubleshooting
-“No tasks found”
+* Ensure database is shared with the integration
+* Ensure properties match the template exactly
 
-Ensure database is shared with integration
+### Checkboxes visually reset
 
-Ensure properties match template exactly
+* Auto-refresh fixes this
+* Notion data remains correct
 
-Checkboxes visually reset
+### Kindle can’t connect
 
-Auto refresh fixes it
+* Device is on the same Wi-Fi network
+* Firewall allows port **3000**
 
-Notion data remains correct
+### `node` is not recognized
 
-Kindle can’t connect
+* Install Node.js from [https://nodejs.org](https://nodejs.org)
+* Restart the terminal
 
-Same Wi-Fi network
+---
 
-Firewall allows port 3000
+## 🔐 Security
 
-node not recognized
+* Notion token stays local
+* No external servers
+* No tracking
+* Safe for home networks
 
-Install Node from https://nodejs.org
+---
 
-Restart terminal
-
-🔐 Security
-
-Notion token stays local
-
-No external servers
-
-No tracking
-
-Safe for home networks
-
-💡 Why This Exists
+## 💡 Why This Exists
 
 Phones distract.
 Paper can’t update.
 E-ink is calm.
 
-This puts your actual Notion tasks somewhere you can’t ignore — without
+This puts your **actual Notion tasks** somewhere you can’t ignore — without
 notifications, apps, or friction.
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If this helped you:
 
-Star the repo
+* ⭐ Star the repository
+* 🔗 Share with other Kindle / Notion users
 
-Share with other Kindle / Notion users
+---
+
+If you want, next I can:
+
+* sanity-check the **final README end-to-end**
+* strip it down even more
+* or stop entirely here 👍
+
 
