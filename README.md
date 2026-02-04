@@ -72,7 +72,7 @@ From the database URL: https://www.notion.so/xxxxxxxxDATABASE_IDxxxxxxxx
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/yourname/notion-kindle-dashboard
+git clone https://github.com/PranavRSathi/notion-kindle-dashboard
 cd notion-kindle-dashboard
 ```
 
