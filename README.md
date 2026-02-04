@@ -1,4 +1,4 @@
-# Notion → Kindle Dashboard (Node.js Only)
+# Notion → Kindle Dashboard 
 
 A lightweight Node.js server that turns a Notion task database into a
 **Kindle-friendly, distraction-free HTML dashboard** with clickable checkboxes
@@ -10,9 +10,9 @@ Just Notion + Node + HTML.
 
 ---
 
-## 🔗 Duplicate the Notion Template (Required)
+##  Duplicate the Notion Template (Required)
 
-👉 **Duplicate this Notion database first:**
+ **Duplicate this Notion database first:**
 
 https://freezing-sparrow-715.notion.site/2fd3140d2a0e81cfabc1f133aab2ba42?v=2fd3140d2a0e817e9765000c54d4e25d
 
@@ -30,7 +30,7 @@ server.
 
 ---
 
-## ✨ Features
+##  Features
 
 - ☑️ Clickable checkboxes (syncs back to Notion)
 - 📆 Day-wise full-screen view (perfect for Kindle)
@@ -41,7 +41,7 @@ server.
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - Node.js **18+**
 - A Notion account
@@ -49,7 +49,7 @@ server.
 
 ---
 
-## 🔑 Notion Setup
+## Notion Setup
 
 ### 1️⃣ Create Integration
 - Go to https://www.notion.so/my-integrations
@@ -113,7 +113,7 @@ You should see:
 
 ---
 
-## 🌐 Access the Dashboard
+##  Access the Dashboard
 
 ### On your computer
 
@@ -144,7 +144,7 @@ http://192.168.1.15:3000/new.html
 
 ---
 
-## 🔄 Auto-Refresh Behavior
+## Auto-Refresh Behavior
 
 ### What happens when…
 
@@ -164,7 +164,7 @@ http://192.168.1.15:3000/new.html
 
 ---
 
-## 🧪 VS Code Live Server (Optional)
+## VS Code Live Server (Optional)
 
 Use this **only to preview layout**.
 
@@ -176,7 +176,7 @@ Use this **only to preview layout**.
    ```
 3. Right-click `new.html` → **Open with Live Server**
 
-⚠️ **Note**
+**Note**
 
 * Live Server is **read-only**
 * Checkbox clicks will **not** sync
@@ -208,7 +208,7 @@ Use this **only to preview layout**.
 
 ---
 
-## 🔐 Security
+## Security
 
 * Notion token stays local
 * No external servers
@@ -217,7 +217,7 @@ Use this **only to preview layout**.
 
 ---
 
-## 💡 Why This Exists
+## Why This Exists
 
 Phones distract.
 Paper can’t update.
@@ -228,10 +228,10 @@ notifications, apps, or friction.
 
 ---
 
-## ⭐ Support
+## Support
 
 If this helped you:
 
-* ⭐ Star the repository
-* 🔗 Share with other Kindle / Notion users
+* Star the repository
+* Share with other Kindle / Notion users
 
